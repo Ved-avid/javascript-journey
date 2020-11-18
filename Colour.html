@@ -1,0 +1,50 @@
+<!DOCTYPE html> 
+<html> 
+  
+<head> 
+    <title>Ved | Js</title> 
+</head> 
+  
+<body> 
+  
+    <h1 id="var" style="color:black;">Happy Diwaliiiiiii </h1> 
+    <h1 id="let" style="color:black;">Happy Chhath.......</h1> 
+    <h2 id ="d" style="color: black">*@*@*@*@*@*@*@*@*@*@</h2>
+    <h7>Click on Start</h7>
+    <button id="btn" onclick="colour()">Start</button> 
+  
+    <script type="text/javascript"> 
+        function colour() { 
+  
+            setInterval(function() { 
+  
+                if (document.getElementById('var').style.color == 'black') 
+                    var col1 = 'blue'; 
+                else 
+                    col1 = 'black'; 
+   
+  
+                if (document.getElementById('let').style.color == 'black') { 
+                    var col2 = 'red'; 
+                } else { 
+                    col2 = 'black'; 
+                } 
+
+                if(document.getElementById('d').style.color == 'black'){
+                    var c3 = 'orange'
+                }
+                else{
+                    c3 = 'black'
+                }
+  
+                document.getElementById('var').style.color = col1; 
+  
+                document.getElementById('let').style.color = col2;
+                document.getElementById('d').style.color = c3;
+            }, 500); 
+  
+        } 
+    </script> 
+</body> 
+  
+</html> 
